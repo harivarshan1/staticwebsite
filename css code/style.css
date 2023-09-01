@@ -1,0 +1,144 @@
+:root{
+  --red:crimson;
+  --green:#53BF9D;
+  --yellow:#FFC54D;
+  --white:whitesmoke;
+}
+.mainpage{
+  background-image:url('/media/bg.jpg');
+  background-size:cover;
+  background-position:center;
+  height:120vh;
+  color:white;
+}
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+header a{
+  text-decoration:none;
+  color:var(--yellow);
+}
+header{
+  display:flex;
+  padding:1em;
+  align-items:center;
+}
+#logo{
+  font-size:1.25em;
+  flex:3;
+}
+nav{
+  flex:2;
+  display:flex;
+}
+nav a{
+  flex:1;
+}
+a:hover{
+  color:var(--green);
+}
+.textmain{
+  display:flex;
+  flex-direction:column;
+  height:50vh;
+  justify-content:center;
+  padding-left:2em;
+  line-height:2.2em;
+}
+.line1{
+  color:var(--red);
+  font-size:2em;
+  font-weight:bolder;
+}
+.line2{
+  color:var(--yellow);
+}
+.btndesign{
+  padding:.6em 1.5em;
+  border-radius:3px;
+  background-color:var(--green);
+  border:1px solid var(--green);
+  color:white;
+}
+.button{
+  margin-top:.8em;
+}
+.tablecontainer{
+  background:linear-gradient(90deg,rgb(96, 94, 94),rgb(55, 52, 52));
+  color:var(--white);
+}
+.mu,.lo{
+  background:linear-gradient(90deg,rgb(96, 94, 94),rgb(55, 52, 52));
+  color:var(--red);
+  font-size:1.6em;
+  margin:0;
+  display:flex;
+  justify-content:center;
+}
+.tablecontainer{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(253px,1fr));
+}
+table{
+  display:flex;
+  justify-content:center;
+  width:100%;
+  padding:1em;
+}
+.menu1{
+  flex:1;
+}
+.menu2{
+  flex:1;
+}
+.menu3{
+  flex:1;
+}
+tr{
+  display:flex;
+  justify-content:center;
+  margin-top:0.7em;
+}
+th{
+  font-size:1.4em;
+  color:var(--green);
+}
+td:nth-child(1){
+  flex:1;
+  justify-self:left;
+}
+td:nth-child(2){
+  justify-self:right;
+}
+tbody{
+  width:100%;
+}
+.menu2{
+  grid-row:span 2;
+}
+.addressmain{
+  display:flex;
+  background:linear-gradient(90deg,rgb(96, 94, 94),rgb(55, 52, 52));
+  color:var(--white);
+  flex:1;
+  padding:1em;
+  flex-wrap:wrap;
+}
+
+.addressmain h2{
+  color:var(--green);
+  margin-bottom:1em;
+}
+.addressmain div{
+  flex:1;
+  min-width:253px;
+}
+.copy{
+  background-color:rgb(66, 64, 64);
+  color:white;
+  padding:.2em;
+}
+header i{
+  margin-right:.5em;
+}
